@@ -8,7 +8,7 @@
   
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index.css">
   
     <title>Frontend Mentor | Interactive rating component</title>
   
@@ -26,32 +26,40 @@
       body{
         font-family: "Overpass";
         background-color: hsl(218, 8%, 12%);
+        color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
+	margin: 0;
+
       }
     </style>
   </head>
   
   <body>
     <!-- Rating state start -->
-    <div>
+    <div class="container">
       <!-- This will contain the text, the rating scale from 1 to 5, and the submit button -->
       <h1 class="header">How did we do?</h1>
       <p class="description">Please let us know how we did with your support request. All feedback is appreciated to help
         us improve our offering!</p>
       <form class="rating-form" onsubmit="return submitRating()">
-        <input type="radio" id="rating1" name="rating" value="1">
+        <input type="radio" class="rating-item" name="rating" value="1">
         <label for="rating1">1</label><br>
   
-        <input type="radio" id="rating2" name="rating" value="2">
+        <input type="radio" class="rating-item" name="rating" value="2">
         <label for="rating2">2</label><br>
   
-        <input type="radio" id="rating3" name="rating" value="3">
+        <input type="radio" class="rating-item" name="rating" value="3">
         <label for="rating3">3</label><br>
   
-        <input type="radio" id="rating4" name="rating" value="4">
+        <input type="radio" class="rating-item" name="rating" value="4">
         <label for="rating4">4</label><br>
   
-        <input type="radio" id="rating5" name="rating" value="5">
-        !-- <label for="rating5">5</label><br> -->
+        <input type="radio" class="rating-item" name="rating" value="5">
+        <label for="rating5">5</label><br>
   
         <button type="submit">Submit Rating</button>
         </form>
