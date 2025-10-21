@@ -60,3 +60,13 @@ form.rating-form input.rating-item {
   margin: 4px 2px;
   cursor: pointer;
 }
+.hidden {
+  display: none;
+}
+.attribution {
+  display: flex;
+  flex-wrap: wrap;
+}
+.attribution {
+  margin-top: auto;
+}
