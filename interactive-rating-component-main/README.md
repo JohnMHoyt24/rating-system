@@ -43,10 +43,10 @@ of the component will change with a thank you message and the option to return t
 - The Flexbox and how it can be used to organize divs and wrap text on a new line
   ### index.css lines 11-16
   ```
-  form.rating-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-}
+    form.rating-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
 ```
