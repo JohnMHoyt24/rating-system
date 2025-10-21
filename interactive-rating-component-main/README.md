@@ -17,3 +17,26 @@ of the component will change with a thank you message and the option to return t
 - JavaScript
 - CSS
 - Flexbox
+
+## What I Learned
+- The classList function and how it influences the state of the component by
+  adding or removing the .hidden class
+
+    ### index.js lines 8-22
+    ```
+    ratingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const selectedRating = document.querySelector('input[name="rating"]:checked');
+
+    if(selectedRating) {
+      const ratingValue = selectedRating.value;
+
+      selectedRatingSpan.textContent = ratingValue;
+
+      ratingState.classList.add('hidden');
+      thankYouState.classList.remove('hidden');
+    } else{
+      alert('Please select a rating before submitting.');
+    }
+  });
+  ```
