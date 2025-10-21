@@ -30,7 +30,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      display: flex;
+      flex-direction: column;
       min-height: 100vh;
       margin: 0;
 
@@ -40,7 +41,7 @@
 
 <body>
   <!-- Rating state start -->
-  <div class="container">
+  <div class="container" id="rating-state">
     <!-- This will contain the text, the rating scale from 1 to 5, and the submit button -->
     <h1 class="header">How did we do?</h1>
     <p class="description">Please let us know how we did with your support request. All feedback is appreciated to help
@@ -69,21 +70,24 @@
 
   <!-- Thank you state start -->
 
-  <div class="thank-you">
-    <p>You selected <!-- Add rating here --> out of 5. Thank you!</p>
-
+  <div class="thank-you hidden" id="thank-you-state">
+    <img src="./images/illustration-thank-you.svg" alt="Thank you image">
+    <p>You selected <span id="selected-rating"></span> out of 5.</p>
+    <h1>Thank you!</h1>
     <p>We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch!</p>
+      don’t hesitate to get in touch!
+    </p>
+    <button type="button" class="my-button" id="back-button">Go back</button>
   </div>
 
   <!-- Thank you state end -->
 
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">John Hoyt</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/JohnMHoyt24">John Hoyt</p></a>.
   </div>
-  <script src="script.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
